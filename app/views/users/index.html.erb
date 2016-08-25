@@ -1,0 +1,6 @@
+<ol>
+	<% @user.each do |user| %>
+		<li><%= user.name %></li>
+	<% end %>
+</ol>
+<%= link_to 'Back', posts_path, class: 'btn' %>

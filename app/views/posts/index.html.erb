@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class="title">Listing Posts</h1>
+<h1 class="title">All Posts</h1>
 
 <table>
   <thead>
@@ -27,3 +27,7 @@
 <br>
 
 <%= link_to 'New Post', new_post_path, class: 'btn' %>
+
+<%= link_to 'See All Users', users_path, class: 'btn' %>
+
+<%= line_chart Visit.group_by(:created_at).count %>

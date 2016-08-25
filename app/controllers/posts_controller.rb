@@ -6,6 +6,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    ahoy.track "Viewed Index", title: "Posts page viewed"
   end
 
   # GET /posts/1
