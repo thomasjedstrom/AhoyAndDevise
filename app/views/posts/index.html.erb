@@ -30,4 +30,6 @@
 
 <%= link_to 'See All Users', users_path, class: 'btn' %>
 
-<%= line_chart Visit.group_by(:created_at).count %>
+<h1 class="title">Site Activity</h1>
+
+<%= line_chart @events %>

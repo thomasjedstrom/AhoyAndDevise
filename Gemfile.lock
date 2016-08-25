@@ -58,6 +58,7 @@ GEM
     browser (2.2.0)
     builder (3.2.2)
     byebug (9.0.5)
+    chartkick (2.0.2)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -79,6 +80,8 @@ GEM
     geocoder (1.3.7)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    groupdate (3.0.2)
+      activesupport (>= 3)
     hirb (0.7.3)
     i18n (0.7.0)
     jbuilder (2.6.0)
@@ -103,6 +106,7 @@ GEM
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
     orm_adapter (0.5.0)
+    pg (0.18.4)
     pkg-config (1.1.7)
     rack (1.6.4)
     rack-attack (5.0.1)
@@ -188,11 +192,14 @@ DEPENDENCIES
   activeuuid (>= 0.5.0)
   ahoy_matey
   byebug
+  chartkick
   coffee-rails (~> 4.1.0)
   devise
+  groupdate
   hirb
   jbuilder (~> 2.0)
   jquery-rails
+  pg
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)

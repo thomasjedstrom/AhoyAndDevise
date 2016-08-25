@@ -2,11 +2,19 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
+
+  def group_by_criteria
+    time.to_date.to_s(:db)
+  end
+  helper_method :group_by_criteria
+
+
   # GET /posts
   # GET /posts.json
   def index
     @posts = Post.all
     ahoy.track "Viewed Index", title: "Posts page viewed"
+    @events = Ahoy::Event.group("time::date").select("time::date as date, count(1) as count").map{|k| [k.date, k.count]}
   end
 
   # GET /posts/1

@@ -15,6 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require ahoy
+//= require Chart.bundle
+//= require chartkick
 
 
 ahoy.trackAll();
