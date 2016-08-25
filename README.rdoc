@@ -1,6 +1,0 @@
-== README
-
-Stardate 08/25/2016 This is the initial voyage of the AhoyAndDevise project to boldy go where I haven't gone before.
-More descriptively, I've been working on Rails for the past 3 weeks and I'm at the point of wanting to venture out past the core functionality to see where this thing can go. I had wanted to implement some of the more common features of websites (such as timed out authentication, password resets, captchas, and probably more that I can't think of at the moment), so, here's a test tube baby to get that ball rolling.
-
-
