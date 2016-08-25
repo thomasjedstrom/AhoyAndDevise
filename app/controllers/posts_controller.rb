@@ -12,22 +12,23 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
     ahoy.track "Viewed Index", title: "Posts page viewed"
+
+    @posts = Post.all
+
     @events = Ahoy::Event.group("time::date").select("time::date as date, count(1) as count").map{|k| [k.date, k.count]}
+    @index_visits =  Ahoy::Event.all.where(name: "Viewed Index").group_by_hour(:time).count
+    @browsers = Visit.all.group(:browser).count
+    
   end
 
-  # GET /posts/1
-  # GET /posts/1.json
   def show
   end
 
-  # GET /posts/new
   def new
     @post = Post.new
   end
 
-  # GET /posts/1/edit
   def edit
   end
 

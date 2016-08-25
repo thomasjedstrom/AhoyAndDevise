@@ -30,6 +30,14 @@
 
 <%= link_to 'See All Users', users_path, class: 'btn' %>
 
-<h1 class="title">Site Activity</h1>
+<h1 class="title">Gross Site Activity</h1>
 
 <%= line_chart @events %>
+
+<h1 class="title">Index Page Visits</h1>
+
+<%= area_chart @index_visits %>
+
+<h1 class="title">Browser Usage</h1>
+
+<%= pie_chart @browsers %>
