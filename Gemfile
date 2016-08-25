@@ -41,6 +41,7 @@ gem 'activeuuid', '>= 0.5.0'
 gem 'groupdate'
 gem "chartkick"
 gem 'pg'
+gem 'rails_12factor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
