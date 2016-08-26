@@ -1,0 +1,9 @@
+development: &default
+  adapter: active_record
+  active_record_adapter: postgresql
+  database: ahoyanddevise_development
+test:
+  adapter: active_record
+  active_record_adapter: default
+  collecting: false
+production:
