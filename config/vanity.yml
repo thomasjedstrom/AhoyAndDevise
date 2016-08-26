@@ -11,4 +11,5 @@ production:
   database: ahoyanddevise_production
   username: ahoyanddevise
   password: <%= ENV['AHOYANDDEVISE_DATABASE_PASSWORD'] %>
-
+  encoding: unicode
+  pool: 5
