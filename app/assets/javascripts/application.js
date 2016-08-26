@@ -17,6 +17,8 @@
 //= require ahoy
 //= require Chart.bundle
 //= require chartkick
+//= require highcharts
+
 
 
 ahoy.trackAll();
