@@ -11,9 +11,18 @@
 	<div class="navbar">
 		<% if user_signed_in? %>
 			<h3>Hello, <%= current_user.name %></h3>
+
+			<h4 id="abtest"><a href="/test"><%= ab_test(:welcome_message) %></a></h4>
+
 			<h3 class="right"><%= link_to "Sign_out", destroy_user_session_path, :method => 'delete' %></h3>
 		<% end %>
 	</div>
+
+<div class="notice">
+	<% if test_success %>
+		<p> <%= test_success %></p>
+	<% end %>
+</div>
 
 	<div class="container">
 		<%= yield %>

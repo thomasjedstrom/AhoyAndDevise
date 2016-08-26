@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
 
 	after_filter :ahoy_track
 
+  use_vanity
+
+  add_flash_types :test_success
+
   protected
 
   def ahoy_track

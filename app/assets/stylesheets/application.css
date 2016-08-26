@@ -29,6 +29,8 @@ body{
 .navbar{
 	background: lightblue;
 	padding: 0px 10%;
+	display: flex;
+	justify-content: space-between;
 }
 .navbar>h3{
 	margin: 0px;
@@ -73,4 +75,20 @@ a {
 	&:visited {
     	color: white;
   	}
+}
+
+#abtest{
+	display: inline-block;
+	margin: 0px;
+	color: red;
+	font-size: 2em;
+	padding: 20px;
+}
+.notice{
+	font-style: italic;
+	color: yellow;
+	font-weight: bold;
+	font-size: 2.5em;
+	background: black;
+	text-align: center;
 }

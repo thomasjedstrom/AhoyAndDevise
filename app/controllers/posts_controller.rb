@@ -2,6 +2,11 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
+  def test
+    Vanity.track! :first_test
+    redirect_to posts_path, :flash => { :test_success => 'test click logged' }
+  end
+
 
   def group_by_criteria
     time.to_date.to_s(:db)
