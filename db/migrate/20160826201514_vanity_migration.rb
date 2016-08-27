@@ -8,7 +8,7 @@ class VanityMigration < ActiveRecord::Migration
   alias_method :default_connection, :connection
 
   def with_vanity_connection
-    # @connection = Vanity::Adapters::ActiveRecordAdapter::VanityRecord.connection
+    @connection = Vanity::Adapters::ActiveRecordAdapter::VanityRecord.connection
     yield
     @connection = default_connection
   end
